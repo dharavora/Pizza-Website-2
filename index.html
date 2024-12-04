@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-360.css">
+    <link rel="stylesheet" href="css/min-576.css">
+    <link rel="stylesheet" href="css/min-992.css">
+    <link rel="stylesheet" href="css/min-1100.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+        </style>
+</head>
+<body>
+    <!-- ====================== header ======================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <img src="Images/logo-pizza.svg" alt="image">
+                Pizza
+            </a>
+
+            <div class="nav--menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#home" class="nav--link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav--link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#popular" class="nav--link">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#products" class="nav--link">Products</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav--link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            
+            <!-- ===== close button ===== -->
+            <div class="nav--close" id="nav-close">
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </div>
+
+            <!-- ======== Toggle Button ========= -->
+            <div class="nav--toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+    </header>
+
+    <!-- ====================== main ==================== -->
+    <main class="main">
+
+        <!-- ===================== home ==================== -->
+        <section class="home section" id="home">
+            <div class="home--container container-grid">
+                <div class="home--data">
+                    <h1 class="home--title">Crispy And <br> Delicious Pizzas</h1>
+                    <p class="home--description">
+                        <br> Order the best pizzas to end your hunger
+                        <br> and make your family moments more 
+                        <br> memorable, place your Order now.
+                    </p>
+                    <a href="#products" class="button">Order Pizza Now</a>
+                    <img src="Images/sticker-pizza.svg" alt="image" class="home--sticker-1">
+                    <img src="Images/sticker-leaf.svg" alt="image" class="home--sticker-2">
+                </div>
+                
+                <div class="home--images">
+                    <img src="https://static.vecteezy.com/system/resources/previews/048/045/400/non_2x/sliced-pizza-on-circle-wooden-board-isolated-on-transparent-background-png.png" alt="images" class="home--pizza">
+                </div>
+            </div>
+                
+        </section>
+
+        <!-- ==================== about ===================== -->
+        <section class="about section" id="about">
+            <div class="about-container">
+                <div class="left-img">
+                    <img src="Images/about-img.png" alt="">
+                </div>
+                <div class="about-data">
+                    <h1 class="about-title">
+                        Learn More About <br>Our History
+                    </h1>
+                    <p class="about-description">The secret to success is the best ingredients 
+                    <br> to make a better pizza. Today we strive for
+                    <br> perfection, just as we have been doing for 15 years
+                    <br> when we first opened the pizzeria in Lima - peru.  
+                    </p>
+                    <a href="#popular" class="button">The Best Pizzas</a>
+                    <img src="Images/sticker-cheese.svg" alt="images" class="cheese-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== popular ===================  -->
+        <section class="popular section" id="popular">
+            <div class="top-data">
+                <div class="popular-title">
+                    <h1>Discover <br> Popular Orders</h1>
+                </div>
+                <p class="pop-description">
+                    Select the best prepared and delicious flavours. We have
+                    <br> collected some popular recipes from around the world for
+                    <br> you to choose your favorite.
+                </p>
+            </div>
+
+            <div class="popular-swiper">
+                <img src="Images/popular-dish.png" alt="image" class="popular-dish">
+                
+                <div class="card-info">
+                    <!-- <i class="fa-solid fa-chevron-left" id="prev" onclick="prevSlide()"></i> -->
+
+                    <div class="popular-card">
+                        <img src="Images/popular-1.png" alt="image" class="popular-img">
+                        <h3 class="popular-name">Margherita Pizza</h3>
+                    </div>
+                    <div class="popular-card">
+                        <img src="Images/popular-2.png" alt="image" class="popular-img">
+                        <h3 class="popular-name">Mashroom Pizza</h3>
+                    </div>
+                    <div class="popular-card">
+                        <img src="Images/popular-3.png" alt="image" class="popular-img">
+                        <h3 class="popular-name">Pepperoni Pizza</h3>
+                    </div>
+
+                    <!-- <i class="fa-solid fa-chevron-right" id="next" onclick="nextSlide()"></i> -->
+                </div>
+            </div>
+        </section>
+
+            <div class="page-2">
+                <div class="heading">
+                    <h1>Fresh And <br> Natural Ingredients</h1>
+                </div>
+
+                <div class="info">
+                    <div class="left-info">
+                        <div class="row">
+                            <img src="Images/recipe-flour.png" alt="image" class="image">
+                            <div class="data">
+                                <h3>Flour</h3>
+                                <p>The best wheat from the field <br> for the best flour.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="Images/recipe-cheese.png" alt="image" class="image">
+                            <div class="data">
+                                <h3>Cheese</h3>
+                                <p>Indulge in cheese for a healthy <br> future.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="Images/recipe-sauces.png" alt="image" class="image">
+                            <div class="data">
+                                <h3>Sauces</h3>
+                                <p>Add a touch of salsa to your life <br> and it will taste better.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="Images/recipe-tomato.png" alt="image" class="image">
+                            <div class="data">
+                                <h3>Vegetables</h3>
+                                <p>Vegetables full of the essence <br> of nature and organic.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="Images/recipe-meat.png" alt="image" class="image">
+                            <div class="data">
+                                <h3>Meats</h3>
+                                <p>The best fresh meats for your <br> health.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-img">
+                        <img src="Images/recipe-img.png" alt="image" class="image">
+                    </div>
+                </div>
+            </div>
+
+        <!-- ====================== Products ==================  -->
+        <section class="products-section" id="products">
+            <div class="product-title">
+                <h1>The Most <br> Devoured Pizzas</h1>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="Images/product-1.png" alt="" class="img">
+                    <h2>Vegetarian <br> Pizza</h2>
+                    <div class="price">
+                        <h1>$15</h1>
+                        <p><i class="fa-solid fa-bag-shopping"></i></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/product-2.png" alt="" class="img">
+                    <h2>Pepperoni <br> Pizza</h2>
+                    <div class="price">
+                        <h1>$10</h1>
+                        <p><i class="fa-solid fa-bag-shopping"></i></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/product-3.png" alt="" class="img">
+                    <h2>Margherita <br> Pizza</h2>
+                    <div class="price">
+                        <h1>$12</h1>
+                        <p><i class="fa-solid fa-bag-shopping"></i></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/product-4.png" alt="" class="img">
+                    <h2>Mushroom <br> Pizza</h2>
+                    <div class="price">
+                        <h1>$17</h1>
+                        <p><i class="fa-solid fa-bag-shopping"></i></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/product-5.png" alt="" class="img">
+                    <h2>Italian <br> Pizza</h2>
+                    <div class="price">
+                        <h1>$10</h1>
+                        <p><i class="fa-solid fa-bag-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== Recipe =================== -->
+        <section class="contact section" id="contact">
+            <div class="template">
+                <div class="scooter">
+                    <img src="Images/contact-img.png" alt="image" class="image">
+                    <img src="Images/sticker-tomato.svg" alt="image" class="sticker-tomato">
+                    <img src="Images/sticker-onion.svg" alt="image" class="sticker-onion">
+                </div>
+                
+                <div class="right-data">
+                    <div class="heading">    
+                        <h1>Contact Now</h1>
+                    </div>
+                    <div class="right-info">
+                        <div class="address-info">
+                            <div class="icons">
+                                <h2>Write Us</h2>
+                                <div class="socials">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                            </div>
+
+                            <div class="delivery">
+                                <h2>Delivery</h2>
+                                <div class="number">
+                                    <p>+00-987-7654-321</p>
+                                    <p>+11-012345</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <h2>Location</h2>
+                            <div class="add">
+                                <p>Lima-Sun City-Peru <br> Av.Moon #4321</p>
+                                <div class="loc">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>View On Map</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="Images/sticker-mushroom.svg" alt="image" class="sticker-mushroom">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-title">
+                    <h1>Pizza</h1>
+                </div>
+
+                <div class="col">
+                    <div class="col-1">
+                        <h2>Social</h2>
+                        <p>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </p>
+                    </div>
+
+                    <div class="col-2">
+                        <h2>Subscribe For Discount</h2>
+                        <form action="">
+                            <input 
+                                type="email"
+                                name=""
+                                id="email"
+                                required
+                                placeholder="Email">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+
+                    <div class="col-3">
+                        <h2>Payment Methods</h2>
+                        <p>
+                            <img src="Images/footer-card-1.png" alt="image" class="card-1">
+                            <img src="Images/footer-card-2.png" alt="image" class="card-2">
+                            <img src="Images/footer-card-3.png" alt="image" class="card-3">
+                            <img src="Images/footer-card-4.png" alt="image" class="card-4">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lines">
+                    <p>Terms and Agreements Privacy Policy</p>
+                    <p>All rights Reserved By Bedimcode</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script>
+        var navmenu=document.getElementById('nav-menu');
+
+        function openmenu() {
+            navmenu.style.top='0';
+        }
+        function closemenu() {
+            navmenu.style.top='-300px';
+        }
+
+
+        // ============== slider ============== 
+        let currentSlide = 0;
+        const slides= document.querySelectorAll('.popular-img');
+
+        function showSlide(index) {
+            popular-img.forEach((slide) => popular-img.classList.remove('active'));
+
+            if(index >= popular-card.length) {
+                currentSlide =0;
+            } else if (index < 0) {
+                currentSlide =popular-img.length-1;
+            } else {
+                currentSlide=index;
+            }
+            popular-img[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        showSlide(currentSlide)
+    </script>
+</body>
+</html>

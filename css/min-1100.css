@@ -1,0 +1,59 @@
+@media (min-width:1100px) {
+    .nav-list {
+        display: inline-block;
+    }
+    .nav--menu {
+        display: inline-block;
+    }
+    .nav--link {
+        display: inline-block;
+    }
+    .header .fa-solid {
+        display: none;
+    }
+    .home--container {
+        margin-top: 60px;
+    }
+    .home--data {
+        position: relative;
+    }
+    .home--sticker-2 {
+        position: absolute;
+        width: 40px;
+        bottom: 180px;
+        left: 10px;
+        z-index: 5;
+    }
+    .home--sticker-1 {
+        position: absolute;
+        width: 55px;
+        top: 60px;
+        right: 3px;
+        transform: rotate(30deg);
+        z-index: 5;
+    }
+    .about.section {
+        padding: 80px;
+    }
+    .about-data {
+        margin-top: 80px;
+    }
+    .about-container {
+        gap: 50px;
+    }
+    .left-img {
+        width: 350px;
+    }
+    .products-section {
+        padding: 40px 150px;
+    }
+    .template {
+        padding: 40px 40px 0 40px;
+    }
+    .footer-title h1 {
+        margin-top: 50px;
+    }
+    .footer .col h2 {
+        text-align: center;
+    }
+}

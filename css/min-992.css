@@ -1,0 +1,35 @@
+@media (min-width:992px) {
+    .home--data {
+        position: relative;
+    }
+    .home--sticker-2 {
+        position: absolute;
+        width: 60px;
+        bottom: -50px;
+        left: -40px;
+        z-index: 5;
+    }
+    .home--sticker-1 {
+        position: absolute;
+        width: 60px;
+        top: 250px;
+        right: 8px;
+        transform: rotate(30deg);
+        z-index: 5;
+    }
+    .about-container {
+        gap: 180px;
+    }
+    .about-data {
+        position: relative;
+    }
+    .cheese-img {
+        width: 50px;
+        position: absolute;
+        top: 230px;
+        right: 70px;
+    }
+    .popular-dish {
+        width: 300px;
+    }
+}

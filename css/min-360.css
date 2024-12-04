@@ -1,0 +1,148 @@
+@media (min-width:360px) {
+    /* ============== navbar ===============  */
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--body-color);
+        font-family: var(--body-font);
+        z-index: var(--z-fixed);
+        transition: box-shadow .4s;
+    }   
+    .nav {
+        position: relative;
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+    }  
+    .nav--menu {
+        position: fixed;
+        background-color: var(--body-color);
+        width: 100%;
+        box-shadow: 0 4px 16px hsla(353, 100%, 8%, .1);
+        transition: top .4s;
+        padding: 50px 56px;
+        top: -120%;
+        left: 0;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        text-align: center;
+    } 
+    .header .fa-solid {
+        display: block;
+    }
+    .nav--toggle, .nav--close {
+        display: flex;
+        font-size: 1.5rem;
+        color: var(--title-color);
+        cursor: pointer;
+    } 
+    .nav--close {
+        position: absolute;
+        font-size: 25px;
+        top: 16px;
+        right: 24px;
+    }
+    .nav--toggle {
+        font-size: 25px;
+        position: absolute;
+        top: 16px;
+        right: 30px;
+    } 
+    /* =========================  */
+
+    .home.section {
+        padding-top: 70px;
+    }
+    .home--data {
+        position: relative;
+    }
+    .home--sticker-2 {
+        position: absolute;
+        width: 40px;
+        bottom: -30px;
+        left: 20px;
+        z-index: 5;
+    }
+    .home--sticker-1 {
+        position: absolute;
+        width: 40px;
+        top: 310px;
+        right: 8px;
+        transform: rotate(30deg);
+        z-index: 5;
+    }
+    .about.section {
+        padding: 50px;
+    }
+    .about-container .about-data {
+        padding-top: 0px;
+    }
+    .about-data {
+        position: relative;
+    }
+    .left-img {
+        width: 400px;
+        height: 400px;
+    }
+    .cheese-img {
+        width: 50px;
+        position: absolute;
+        bottom: 50px;
+        right: 70px;
+    }
+    .popular-swiper {
+        overflow-x: hidden;
+    }
+    .popular-dish {
+        width: 200px;
+        /* position: fixed; */
+        /* top: 0; */
+    }
+    .popular-img {
+        overflow: scroll;
+        width: 500px;
+    }
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .cards {
+        padding: 70px 0;
+    }
+    .contact.section .template {
+        margin: 0;
+        width: 100%;
+    }
+    .scooter .image{
+        width: 300px;
+    }
+    .template {
+        padding: 40px;
+    }
+    .template .address-info {
+        display: flex;
+        gap: 50px;
+    }
+    .footer {
+        padding: 20px;
+        text-align: start;
+    }
+    .footer .col {
+        gap: 40px;
+    }
+    .footer .col h2 {
+        text-align: start;
+    }
+}

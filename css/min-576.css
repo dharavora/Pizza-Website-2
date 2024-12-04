@@ -1,0 +1,41 @@
+@media (min-width:576px) {
+    .home--container {
+        gap: 30px;
+    }
+    .home--data {
+        position: relative;
+    }
+    .home--sticker-2 {
+        position: absolute;
+        width: 40px;
+        bottom: -40px;
+        left: 0;
+        z-index: 5;
+    }
+    .home--sticker-1 {
+        position: absolute;
+        width: 40px;
+        top: 260px;
+        right: 8px;
+        transform: rotate(30deg);
+        z-index: 5;
+    }
+    .about-container {
+        gap: 150px;
+    }
+    .popular-img {
+        width: 300px;
+    }
+    .page-2 .info {
+        gap: 40px;
+    }
+    .products-section {
+        padding: 30px;
+    }
+    .cards {
+        margin-top: 20px;
+    }
+    .contact.section {
+        padding: 30px 90px;
+    }
+}
